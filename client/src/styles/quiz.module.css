@@ -1,0 +1,24 @@
+.glass {
+    @apply border-4 border-gray-50 shrink-0 h-[100%] w-[70%] rounded-3xl px-7 py-6 min-w-max;
+    background: rgba(255, 255, 255, 0.55);
+    box-shadow: 0 4px 30px #4747470b;
+    backdrop-filter: blur(7.1px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+  }
+  .people{
+    @apply w-[200%] h-[110%] px-10;
+  }
+  .textbox{
+    @apply border-0 px-5 py-3 rounded-xl w-3/4 shadow-sm text-lg ;
+    @apply focus:outline-none;
+    @layer align-center;
+  }
+  .list{
+    list-style-type: decimal;
+  }
+  .btn{
+    @apply border bg-purple-600 w-1/2 py-2 rounded-full text-gray-50 text-xl shadow-sm text-center;
+  }
+  .start .btn{
+    padding:1.5em;
+  }

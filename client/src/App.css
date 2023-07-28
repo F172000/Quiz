@@ -1,0 +1,31 @@
+.next{
+    background-color: rgb(95, 13, 154);
+    justify-self: flex-end;
+    color: white;
+    /* margin-left: 60%; */
+    padding: 10px;
+    border-radius: 50%;
+}
+
+.prev{
+    background-color: rgb(0, 0, 0);
+    justify-self: flex-start;
+    color: white;
+    margin-left: 0%;
+    padding: 10px;
+    border-radius: 50%;
+}
+li{
+    padding-top: 15px;
+}
+.check{
+    
+    border-bottom: 1px solid #e8e5e5;
+    
+    padding-top: 10px;
+  }
+  
+  
+
+  
+
