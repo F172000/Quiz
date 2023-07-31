@@ -3,10 +3,19 @@ import React, { useRef } from 'react';
 import style from '../styles/quiz.module.css';
 import { Link,useNavigate } from 'react-router-dom';
 import people from '../assets/people.png';
+import { useDispatch } from 'react-redux';
+import { setUserId } from '../redux/result_reducer';
 
 export default function Main() {
     const navigate=useNavigate();
     const inputRef=useRef(null);
+    const dispatch=useDispatch();
+    function startQuiz(){
+      if(inputRef.current?.value){
+        dispatch(setUserId(inputRef.current?.value));
+        navigate('/quiz');
+      }
+    }
   return (
     <div className="flex flex-col md:flex-row gap-8 md:gap-16 py-8">
       <div >
@@ -26,7 +35,7 @@ export default function Main() {
             <input ref={inputRef} type="text" placeholder="username*" className={`${style.textbox} justify-center text-center`} />
           </form>
           <div className="flex flex-col items-center py-5">
-            <button className={style.btn} onClick={()=>navigate('/quiz')}>
+            <button className={style.btn} onClick={startQuiz}>
               Start Quiz
             </button>
           </div>

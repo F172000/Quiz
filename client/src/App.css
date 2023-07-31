@@ -25,6 +25,25 @@ li{
     padding-top: 10px;
   }
   
+  input[type=radio]:checked ~ .check::before{
+    background: rgb(121, 18, 135)
+
+  }
+  
+  input[type=radio]:checked ~ .text-primary{
+    color: rgb(121, 18, 135);
+  } 
+  .radiostyle{
+    accent-color: rgb(121, 18, 135);
+  }
+  ul li label{
+    cursor: pointer;
+  }
+  
+  ul li:hover label{
+      color:rgb(121, 18, 135);
+  }
+  
   
 
   
