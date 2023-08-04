@@ -9,3 +9,5 @@
 ### Result Page
 <span style='font-family: Times New Roman;text-align: justify'>Here a user should be able to see the result of the attempted quiz </span>
 ![quiz4](https://github.com/F172000/Quiz/assets/63119868/1e57a884-85f1-4fa3-b30b-37be2365360e)
+### See the deployment here
+https://quizz-blush.vercel.app/
